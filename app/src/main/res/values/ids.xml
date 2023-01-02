@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="location_img" type="string">location</item>
+    <item name="dot_img" type="string">dot</item>
+    <item name="Santosh" type="string">Santosh</item>
+    <item name="Ram" type="string">Ram</item>
+    <item name="Raj" type="string">Raj</item>
+    <item name="Rishi" type="string">Rishi</item>
+</resources>

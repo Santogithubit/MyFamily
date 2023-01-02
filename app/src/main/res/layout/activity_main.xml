@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darker_gray"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_img"
+        android:src="@drawable/ic_baseline_location_on_24"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/security"
+        android:text="My Family"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/location_img"
+        app:layout_constraintEnd_toStartOf="@id/dot_img"
+        android:layout_margin="16dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/dot_img"
+        android:src="@drawable/dot"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="140dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        android:id="@+id/Santosh"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/security"/>-->
+
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="140dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        android:id="@+id/Ram"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/Santosh"/>-->
+
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="140dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        android:id="@+id/Raj"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/Ram"/>-->
+
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="140dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        android:id="@+id/Rishi"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/Raj"/>-->
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_bar"
+        app:menu="@menu/bottom_bar_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemTextColor="@color/green"
+        app:itemIconTint="@drawable/nav_item_colors"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
